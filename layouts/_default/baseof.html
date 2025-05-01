@@ -9,7 +9,9 @@
             {{ partial "header.html" . }}
 
             <div class="content">
-                {{ block "main" . }}{{ end }}
+                {{ block "main" . }}
+                    <!-- Default content if no "main" block is defined -->
+                {{ end }}
             </div>
 
             {{ block "footer" . }}
